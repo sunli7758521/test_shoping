@@ -1,0 +1,64 @@
+/* pages/home/home.wxss */
+.banner{
+  /* border:1px solid; */
+  /* border-radius:5px;  */
+  margin: 0px;
+  /* margin-right: 1px; */
+}
+image {
+  width: 375px;
+  height: 210px;
+  display: inline-block;
+  overflow: hidden;
+}
+.navban{
+  background-color: white;
+}
+.fl_right{
+  float: left;
+  width: 25%;
+  margin-top: 10rpx;
+}
+.navban{
+  width: 100%;
+  height: 400rpx;
+  margin: 0 auto;
+  margin-top: 15rpx;
+}
+.navban .swiper-box{
+  height: 150rpx;
+  border-bottom: 1px solid #f4f4f4;
+}
+.navban .navimg{
+  width: 80rpx;
+  height: 80rpx;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 15rpx;
+}
+.navban .navtext{
+  font-size: 26rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 15rpx;
+}
+.navimg{
+  width: 42rpx;
+  height: 42rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.second-boxs .navtext{
+  font-size: 26rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 15rpx;
+}
+  

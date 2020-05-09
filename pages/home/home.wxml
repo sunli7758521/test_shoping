@@ -1,0 +1,45 @@
+<!--pages/home/home.wxml-->
+<view class="banner" >
+<swiper  indicator-dots="true" circular="true" autoplay="true" interval="5000" duration="500" style="width:375px;height: 210px">
+  <swiper-item   wx:for="{{swiperList}}" wx:key="item">
+    <image  src="{{item.url}}" mode="aspectFill" wx:if="{{item.type=='image'}}"  ></image>
+    <video  src="{{item.url}}" autoplay loop muted show-play-btn="{{false}}" controls="{{false}}" objectFit="cover" wx:if="{{item.type=='video'}}"></video>
+  </swiper-item>
+</swiper>
+</view>
+<!-- 图标滚动 -->
+<swiper class="navban" interval="{{interval}}" duration="{{duration}}" current="{{swiperCurrent}}" indicator-dots="{{indicatorDots}}" indicator-color="{{beforeColor}}" indicator-active-color="{{afterColor}}" style="z-index:1000">
+<swiper-item>
+    <block wx:for="{{scrollOne}}" wx:key="item">
+      <view class='fl_right' hover-class="none" bindtap="gotoPage" id="{{item.id}}" data-path="{{item.url}}">
+        <view class="swiper-box">
+          <image class="navimg" src="{{item.icon}}"></image>
+          <text class="navtext">{{item.text}}</text>
+        </view> 
+      </view>
+    </block>
+  </swiper-item>
+
+  <swiper-item>
+    <view class='fl_right' hover-class="none" wx:for="{{scrollTwo}}" wx:for-item="twoItem" id="{{twoItem.id}}" bindtap="gotoPage" data-path="{{twoItem.url}}" wx:key="twoItem">
+      <view class="swiper-box">
+        <image class="navimg" src="{{twoItem.icon}}"></image>
+        <text class="navtext">{{twoItem.text}}</text>
+      </view> 
+    </view>
+  </swiper-item>
+
+  <swiper-item>
+    <view class='fl_right' hover-class="none" wx:for="{{scrollThree}}" id="{{threeItem.id}}" wx:for-item="threeItem" wx:key="threeItem"
+    bindtap="gotoPage" data-path="{{threeItem.url}}">
+      <view class="swiper-box">
+        <image class="navimg" src="{{threeItem.icon}}"></image>
+        <text class="navtext">{{threeItem.text}}</text>
+      </view> 
+    </view>
+  </swiper-item>
+</swiper>
+
+
+
+

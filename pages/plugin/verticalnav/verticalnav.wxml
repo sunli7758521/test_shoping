@@ -1,0 +1,19 @@
+<view class="VerticalBox">
+  <scroll-view class="VerticalNav nav" scroll-y scroll-with-animation scroll-top="{{VerticalNavTop}}" style="height:calc(100vh - 120rpx)">
+    <view class="cu-item {{index==TabCur?'text-green cur':''}}" wx:for="{{list}}" wx:key="item" bindtap='tabSelect' data-id="{{index}}">
+      Tab-{{item.name}}
+    </view>
+  </scroll-view>
+  <scroll-view class="VerticalMain" scroll-y scroll-with-animation style="height:calc(100vh - 120rpx)" scroll-into-view="main-{{MainCur}}" bindscroll="VerticalMain">
+    <view class="padding-top padding-lr" wx:for="{{list}}" wx:key="item" id="main-{{index}}">
+      <view class="cu-list menu-avatar">
+        <view class="title-name">Tab-{{item.name}}</view>
+        <view class="cu-item">
+           <view class="title" ></view>
+           <view class="title">时尚精品男装女装</view>
+          <view class="cu-avatar radius lg" bindtap='selectDetails' style="background-image:url(https://ossweb-img.qq.com/images/lol/img/champion/Morgana.png);"></view>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+</view>

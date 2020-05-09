@@ -1,0 +1,58 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/plugin/verticalnav/verticalnav",
+    "pages/goodsDetails/goodsDetails"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#08e8e4",
+    "navigationBarTitleText": "商城",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#7b8196",
+    "selectedColor": "#27323f",
+    "borderStyle": "white",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "iconPath": "images/tabbar/home-off.png",
+        "selectedIconPath": "images/tabbar/home-on.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/tabbar/menu-off.png",
+        "selectedIconPath": "images/tabbar/menu-on.png",
+        "text": "分类"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/tabbar/cao-off.png",
+        "selectedIconPath": "images/tabbar/cao-on.png",
+        "text": "种草"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/tabbar/cart-off.png",
+        "selectedIconPath": "images/tabbar/cart-on.png",
+        "text": "购物车"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/tabbar/my-off.png",
+        "selectedIconPath": "images/tabbar/my-on.png",
+        "text": "个人"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 24000
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
